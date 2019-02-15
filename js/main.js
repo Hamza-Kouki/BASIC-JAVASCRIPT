@@ -27,6 +27,26 @@ function myFunction_bold() {
         document.getElementById("abc").style.fontFamily = "Times New Roman", Times, serif;
     }
     else if(selectedValue=="third_font"){
-        document.getElementById("abc").style.fontFamily =  cursive, sans-serif;
+        document.getElementById("abc").style.fontFamily =  "Trebuchet MS", Helvetica, sans-serif;
     }
+}
+/////////////////////////////
+function basic_function_siz(){
+    var select = document.getElementById("size");
+    var selectedValue = size.options[size.selectedIndex].value;
+    if(selectedValue=="first"){
+        document.getElementById("abc").style.fontSize = "1.2em";  
     }
+    else if(selectedValue=="second"){
+        document.getElementById("abc").style.fontSize = "x-small";
+    }
+    else if(selectedValue=="third"){
+        document.getElementById("abc").style.fontSize = "smaller";
+    }
+    else if(selectedValue=="forth"){
+        document.getElementById("abc").style.fontSize = "12px";
+    }
+    else if(selectedValue=="fifth"){
+        document.getElementById("abc").style.fontSize = "80%";
+    }
+}

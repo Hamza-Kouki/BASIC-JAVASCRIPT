@@ -12,15 +12,29 @@
     <button onclick="myFunction_italic()">Make the paragraph italic</button>
     <button onclick="myFunction_underlined()">Make the paragraph underlined</button><br>
     <!-------------------------------------->
+    <div class="title">Try the fonts </div>
     <div id="slectop">
     <select id="selectBox" onchange="basic_function();">
+        <option value="#" >Choose one of these fonts </option>
         <option value="defult_font" >Default Font </option>
         <option value="first_font" >Font "Impact"</option>
         <option value="second_font" >Font "Times New Roman"</option>
-        <option value="third_font" >Font Comic Sans MS</option>
+        <option value="third_font" >Font "Trebuchet MS"</option>
       </select>
 </div>
-
+<!---------------------------------------------->
+    <div class="title">Try to change the size </div>
+        <div id="slectop">
+                <select id="size" onchange="basic_function_siz();">
+                    <option value="#" >Choose one of these size </option>
+                    <option value="first" > 1.2em </option>
+                    <option value="second" > x-small</option>
+                    <option value="third" >smaller</option>
+                    <option value="forth" >12px</option>
+                    <option value="fifth" >80%</option>
+                  </select>
+</div>
+<!---------------------------------------------->
     <section class="pargraph" id="abc">
         <p>
             We're going to make a program that looks like Microsoft Word.
